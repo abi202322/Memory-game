@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Memory Card Game</h1>
+        </div>
+    </header>
+
+    <main>
+        <div id="player-info" class="player-info">
+            <h2>Enter Your Details</h2>
+            <form id="info-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+                <button type="submit">Start Game</button>
+            </form>
+        </div>
+        <div id="game-container" class="hidden">
+            <div id="game-board" class="game-board"></div>
+            <div class="info">
+                <p>Score: <span id="score">0</span></p>
+                <p>Time: <span id="timer">00:00</span></p>
+                <p id="message"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Memory Card Game. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header, footer {
+    background-color: #282c34;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-info {
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#info-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info-form label {
+    margin: 10px 0 5px;
+}
+
+#info-form input {
+    margin-bottom: 15px;
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#info-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #61dafb;
+    color: #282c34;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#info-form button:hover {
+    background-color: #21a1f1;
+}
+
+.hidden {
+    display: none;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    display: none;
+    width: 80px;
+    height: 80px;
+}
+
+.card.flipped img {
+    display: block;
+}
+
+.info {
+    text-align: center;
+}
+
+#message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
